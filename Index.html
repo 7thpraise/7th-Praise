@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Novia's Chic Boutique</title>
+
+  <meta name="description" content="Elegant handcrafted hats and fascinators by Novia's Chic Boutique.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fffafc;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f1dbe5;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      font-family: Georgia, serif;
+      font-size: 25px;
+      font-weight: bold;
+      color: #ba2b69;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 20px;
+
+      background:
+        radial-gradient(circle at top left, #f7d3e5, transparent 40%),
+        radial-gradient(circle at bottom right, #b9eee7, transparent 40%),
+        #fffafc;
+    }
+
+    .hero-content {
+      max-width: 750px;
+    }
+
+    .small-title {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: #0a8987;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      color: #ba2b69;
+      font-size: clamp(46px, 9vw, 84px);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 610px;
+      margin: 0 auto 30px;
+      color: #555;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .whatsapp {
+      background: #128c7e;
+      color: white;
+    }
+
+    .instagram {
+      background: #ba2b69;
+      color: white;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .about {
+      background: white;
+      text-align: center;
+    }
+
+    .section-title {
+      font-family: Georgia, serif;
+      font-size: 38px;
+      color: #ba2b69;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 720px;
+      margin: auto;
+      font-size: 17px;
+      color: #555;
+    }
+
+    .collections {
+      text-align: center;
+    }
+
+    .collection-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 35px auto 0;
+    }
+
+    .collection-card {
+      background: white;
+      border-radius: 18px;
+      padding: 35px 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.06);
+    }
+
+    .collection-card .icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .collection-card h3 {
+      color: #0a8987;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      background: #212121;
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title {
+      color: #f4bfd7;
+    }
+
+    .contact p {
+      max-width: 620px;
+      margin: 0 auto 25px;
+      color: #ddd;
+    }
+
+    footer {
+      background: #151515;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        display: block;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 8px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .collection-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 72vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">Novia's Chic Boutique</div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#collections">Collections</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="small-title">
+      Distinctive • Elegant • Handcrafted
+    </div>
+
+    <h1>
+      Wear the<br>
+      Extraordinary.
+    </h1>
+
+    <p>
+      Statement hats and fascinators designed for women who
+      embrace elegance, individuality and unforgettable style.
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="button whatsapp"
+        href="https://wa.me/18768015404?text=Hello%20Novia's%20Chic%20Boutique!%20I%20am%20interested%20in%20your%20hats%20and%20fascinators."
+        target="_blank">
+        WhatsApp Us
+      </a>
+
+      <a
+        class="button instagram"
+        href="https://www.instagram.com/noviachicboutique/"
+        target="_blank">
+        View Instagram
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="about" id="about">
+
+  <h2 class="section-title">
+    Made to Be Noticed
+  </h2>
+
+  <p>
+    Novia's Chic Boutique creates distinctive hats and fascinators
+    that transform an outfit into a statement. From elegant church
+    and special-occasion pieces to bold contemporary designs, each
+    creation celebrates style, confidence and individuality.
+  </p>
+
+</section>
+
+
+<section class="collections" id="collections">
+
+  <h2 class="section-title">
+    Our Style
+  </h2>
+
+  <div class="collection-grid">
+
+    <div class="collection-card">
+      <div class="icon">👒</div>
+      <h3>Elegant Hats</h3>
+      <p>
+        Sophisticated statement pieces created to complete your look.
+      </p>
+    </div>
+
+    <div class="collection-card">
+      <div class="icon">🌸</div>
+      <h3>Fascinators</h3>
+      <p>
+        Artistic, expressive designs for weddings, church,
+        celebrations and special occasions.
+      </p>
+    </div>
+
+    <div class="collection-card">
+      <div class="icon">✨</div>
+      <h3>Individual Style</h3>
+      <p>
+        Pieces for women who aren't interested in looking like
+        everyone else.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+  <h2 class="section-title">
+    Find Your Next Statement Piece
+  </h2>
+
+  <p>
+    See our latest creations on Instagram or contact
+    Novia's Chic Boutique directly through WhatsApp.
+  </p>
+
+  <div class="buttons">
+
+    <a
+      class="button whatsapp"
+      href="https://wa.me/18768015404"
+      target="_blank">
+      WhatsApp +1 876 801 5404
+    </a>
+
+    <a
+      class="button instagram"
+      href="https://www.instagram.com/noviachicboutique/"
+      target="_blank">
+      @noviachicboutique
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+  © 2026 Novia's Chic Boutique • Jamaica
+</footer>
+
+
+</body>
+</html>
