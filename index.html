@@ -55,7 +55,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 30px 20px;
+      padding: 16px 20px 12px;
 
       background:
         radial-gradient(circle at top left, #f7d3e5, transparent 40%),
@@ -80,9 +80,9 @@
     h1 {
       font-family: Georgia, serif;
       color: #ba2b69;
-      font-size: clamp(38px, 11vw, 72px);
+      font-size: clamp(30px, 8vw, 48px);
       line-height: 1;
-      margin-bottom: 20px;
+      margin-bottom: 8px;
     }
 
     .hero p {
@@ -95,13 +95,16 @@
     .buttons {
       display: flex;
       justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
+      gap: 8px;
+      flex-wrap: nowrap;
+      margin-top: 0;
+      margin-bottom: 6px;
     }
 
     .button {
       display: inline-block;
-      padding: 11px 20px;
+      padding: 9px 12px;
+      font-size: 13px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
@@ -148,6 +151,7 @@
 
     .collections {
       text-align: center;
+      padding-top: 16px;
     }
 
     .collection-grid {
@@ -155,7 +159,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       max-width: 1000px;
-      margin: 35px auto 0;
+      margin:12px auto 0;
     }
 
     .collection-card {
