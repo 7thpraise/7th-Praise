@@ -259,6 +259,42 @@ nav a:active {
         min-height: auto;
       }
     }
+    .collection-grid img {
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 95vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
   </style>
 </head>
 
@@ -356,6 +392,11 @@ nav a:active {
     </div>
 
   </div>
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="Enlarged design">
+</div>
+  
 
 </section>
 
@@ -396,6 +437,28 @@ nav a:active {
   © 2026 Novia's Chic Boutique • Jamaica
 </footer>
 
+<script>
+const galleryImages = document.querySelectorAll('.collection-grid img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.lightbox-close');
 
+galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active');
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+    }
+});
+</script>
 </body>
 </html>
